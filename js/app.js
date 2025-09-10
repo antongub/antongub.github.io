@@ -18,8 +18,15 @@ function setup() {
   }, 200)
 }
 
+function startOrStop() {
+    if (intervalToken) clearIntervalToken();
+    else setup();
+}
+
 window.addEventListener('resize', function (event) {
   setup();
 }, true);
+
+document.getElementById('toggleButton').addEventListener('click', startOrStop);
 
 setup();
