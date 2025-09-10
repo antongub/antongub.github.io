@@ -35,7 +35,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: calc(100vh - (2 * 8px));
   width: 93vw;
   /* background-color: rgb(25, 34, 65); */
   background-color: rgb(6, 20, 52);
